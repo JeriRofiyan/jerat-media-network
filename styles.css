@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #333;
+  color: #f57003;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url("img/header-bg.jpeg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 220px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f57003;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+  background-image: url("img/pexels-anete-lusina-4792713-1024x684.jpg"); /* Ganti 'services-bg.jpg' dengan URL atau path relatif background yang Anda inginkan */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  transition: background-color 0.5s ease; /* Transisi warna background selama 0.5 detik */
+}
+
+.service {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Opacity 60% untuk bagian service */
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease; /* Transisi warna background selama 0.5 detik */
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 90px;
+  margin-top: 20px; /* Tambahkan margin-top untuk menaikkan tulisan "Layanan Kami" ke atas */
+  color: #fff; /* Ubah warna tulisan menjadi putih */
+  font-size: 30px; /* Ubah ukuran font menjadi 28px */
+  font-weight: bold; /* Jadikan tebal */
+}
+
+/* Efek hover untuk service */
+.service:hover {
+  background-color: rgba(255, 255, 255, 1); /* Opacity 100% saat dihover */
+}
+
+.about {
+  padding: 100px 0;
+  background-color: #4d4242;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.logo {
+  float: left; /* Mengatur posisi logo ke kiri */
+  margin-right: 15px; /* Jarak antara logo dengan konten */
+}
+
+.logo img {
+  max-width: 185px; /* Sesuaikan lebar maksimum logo sesuai kebutuhan */
+}
+
+.content {
+  overflow: hidden; /* Menangani float elemen sebelumnya */
+}
+
+.content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+.social-links img {
+  max-width: 30px; /* Ubah ukuran maksimum logo sesuai keinginan Anda */
+  margin-right: 15px; /* Jarak antara logo */
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.contact {
+  padding: 100px 0;
+  background-color: #4d4242;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #555;
+  background-color: #fff;
+}
+#map {
+  height: 400px; /* Sesuaikan tinggi peta sesuai kebutuhan */
+  margin-bottom: 40px; /* Jarak antara peta dengan form kontak */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style untuk infowindow (popup informasi saat marker di klik) */
+.infowindow {
+  max-width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+}
