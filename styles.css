@@ -112,6 +112,14 @@ nav ul li a {
   text-align: center;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .logo {
   float: left; /* Mengatur posisi logo ke kiri */
   margin-right: 15px; /* Jarak antara logo dengan konten */
@@ -130,6 +138,14 @@ nav ul li a {
   font-weight: bold;
   margin-bottom: 10px;
   color: #f4f4f4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /*Footer*/
